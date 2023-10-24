@@ -6,11 +6,12 @@ import { IZone } from 'src/app/models/Izoneinterface';
   selector: 'app-zoneswithcams',
   templateUrl: './zoneswithcams.component.html',
   styleUrls: ['./zoneswithcams.component.scss'],
- 
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ZoneswithcamsComponent implements OnInit{
  @Input('zones') zones:IZone[]=[]
  @Input('expanded') expanded!:boolean;
+ public expandcams:boolean=false;
  
 constructor(private changes:ChangeDetectorRef) {}
  ngOnInit(): void {}
@@ -19,5 +20,8 @@ constructor(private changes:ChangeDetectorRef) {}
   if (this.zones?.length) {
     this.changes.markForCheck();
   }
+}
+public openCams(){
+  this.expandcams = !this.expandcams
 }
 }

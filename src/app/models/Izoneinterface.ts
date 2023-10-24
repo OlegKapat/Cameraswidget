@@ -1,13 +1,17 @@
 export interface IZone {
     zona: string
     checked: boolean
-    subzone: Subzone[]
+    numberzone:number
+    cams: Cams[]
   }
   
-  export interface Subzone {
+  export interface Cams {
     subzone: string
     camera: string
     connection: boolean
+    checked:boolean
     icon: string
+    iconconn:string
+    iconclick:string
   }
   

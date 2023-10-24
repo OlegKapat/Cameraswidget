@@ -39,9 +39,8 @@ export class WidgetComponent implements OnInit {
     this.nodeService.getFiles().then(files => this.nodes = files);
   }
   getZones(){
-   this.zoneservice.getZones().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((x)=>{this.zonedata = x},(error:Error)=> console.log(error));
+   this.zoneservice.getZones().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((x)=>{this.zonedata = x});
    this.expanded = !this.expanded;
-   console.log(this.expanded );
   }
   private onDragDrop = (event: CdkDragDrop<Array<IZone>>) => {
     if (event.container === event.previousContainer) {

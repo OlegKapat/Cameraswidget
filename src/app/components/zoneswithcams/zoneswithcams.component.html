@@ -1,26 +1,31 @@
-<!-- <div id="wrapper"cdkDrag>
-    <input type="checkbox">
-    <div class="inside">
-        <span class="material-symbols-outlined videocam">videocam</span>
-        <div class="textcams">
-            <p class="maincam">Sensor 1</p>
-            <p class="text">Camera 1</p>
-        </div>
-        <div class="constatus">
-            <span class="material-symbols-outlined connect">sync_alt </span>
-            <sup class="conecttext">{{"dissconected"}}</sup>
-        </div>
-        <span class="material-symbols-outlined clickconnect">wifi_tethering_off</span>
-    </div> 
-</div> -->
-     <ng-container *ngFor="let item of zones">
-        <div class="zones" style="margin-left: 20px;">
-            <input type="checkbox" value={{item.checked}}>
-            <div class="allbtn">
-              <span class="material-symbols-outlined zoneimg">activity_zone</span>
-              <sup class="zonetext">Zones</sup>
-              <span  class="material-symbols-outlined click">keyboard_arrow_down</span>
+<ng-template [ngIf]="expanded">
+  <ng-container *ngFor="let item of zones">
+    <div class="zones" style="margin-left: 20px">
+      <input type="checkbox" [checked]="item.checked" />
+      <div class="allbtn">
+        <span class="material-symbols-outlined zoneimg">activity_zone</span>
+        <sup class="zonetext">Zones</sup>
+        <span class="material-symbols-outlined click" (click)="openCams()">keyboard_arrow_down</span>
+      </div>
+    </div>
+    <ng-template [ngIf]="expandcams">
+      <ng-container *ngFor="let cam of item.cams">
+        <div id="wrapper" cdkDrag>
+          <input type="checkbox" [checked]="cam.checked" />
+          <div class="inside">
+            <span class="material-symbols-outlined videocam">{{cam.icon}}</span>
+            <div class="textcams">
+              <p class="maincam">{{cam.subzone}}</p>
+              <p class="text">{{cam.camera}}</p>
             </div>
+            <div class="constatus">
+              <span class="material-symbols-outlined connect">{{cam.iconconn}} </span>
+              <sup class="conecttext">{{cam.connection}} </sup>
+            </div>
+            <span class="material-symbols-outlined clickconnect">{{cam.iconclick}} </span>
           </div>
-    </ng-container>
- 
+        </div>
+      </ng-container>
+    </ng-template>
+  </ng-container>
+</ng-template>
