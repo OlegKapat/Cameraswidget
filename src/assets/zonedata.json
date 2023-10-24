@@ -4,10 +4,10 @@
     "checked": false,
     "numberzone":1,
     "cams": [
-      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" }
+      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" }
     ]
   },
   {
@@ -15,10 +15,10 @@
     "checked": false,
     "numberzone":2,
     "cams": [
-      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false,"icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off"}
+      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false,"icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click"}
     ]
   },
   {
@@ -26,10 +26,10 @@
     "checked": false,
     "numberzone":4,
     "cams": [
-      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off"},
-      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off"},
-      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" }
+      { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click"},
+      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click"},
+      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": true, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" }
     ]
   },
   {
@@ -37,10 +37,10 @@
     "checked": false,
     "numberzone":4,
     "scams": [
-      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" },
-      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"wifi_tethering_off" }
+      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
+      { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": true, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" }
     ]
   }
 ]
