@@ -1,0 +1,26 @@
+[
+    {"zona":"zona 1", "checked":false,"subzone":[
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":false,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":false,"icon":"cameraswitch"},
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":true,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":true,"icon":"cameraswitch"}
+    ]},
+    {"zona":"zona 1", "checked":false,"subzone":[
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":false,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":false,"icon":"cameraswitch"},
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":true,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":true,"icon":"cameraswitch"}
+    ]},
+    {"zona":"zona 1", "checked":false,"subzone":[
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":false,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":false,"icon":"cameraswitch"},
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":true,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":true,"icon":"cameraswitch"}
+    ]},
+    {"zona":"zona 2", "checked":false,"subzone":[
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":false,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":false,"icon":"cameraswitch"},
+        {"subzone":"Sensor 1","camera":"Camera 1","connection":true,"icon":"videocam"},
+        {"subzone":"Sensor 2","camera":"Camera 1","connection":true,"icon":"cameraswitch"}
+    ]}
+]

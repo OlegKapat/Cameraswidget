@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+[resize] .border {
+    position: absolute;
+    background: transparent;
+}
+[resize] .border-top,
+[resize] .border-bottom {
+    left: 0;
+    right: 0;
+    height: 5px;
+    cursor: row-resize;
+}
+[resize] .border-left,
+[resize] .border-right {
+    top: 0;
+    bottom: 0;
+    width: 5px;
+   
+    cursor: col-resize;
+}
+[resize] .border-left {
+    left: 0;
+}
+[resize] .border-right {
+    right: 0;
+}
+[resize] .border-top {
+    top: 0;
+}
+
+[resize] .border-bottom {
+    bottom: 0;
+}
+[mwlResizable] {
+    box-sizing: border-box;
+}

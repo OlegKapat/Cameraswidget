@@ -1,0 +1,94 @@
+@import "primeicons/primeicons.css";
+ .header {
+  height: 30vh;
+  & .pinned {
+    transform: scale(1.4) rotate(45deg);
+  }
+  &__mainblock{
+    &-panel {
+      background-color: white;
+     
+      & .headerDivider {
+        border-left: 2px solid #939496;
+        border-right: 2px solid #939496;
+        border-radius: 20px;
+        height: 40px;
+        position: absolute;
+        right: 300px;
+        top: 35px;
+        margin-right: 20px;
+      }
+      & .filter{
+          transform: scale(1.6);
+          margin-right: 10px;
+      }
+    }
+  }
+ 
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .headerDivider{
+    display: none;
+  }
+}
+:host ::ng-deep .p-panel {
+  font-size: 20px;
+  font-family: "Lucida Sans",  sans-serif;
+  font-weight: 400;
+  background-color: #f8f9fa;
+  opacity: 0.5;
+}
+:host ::ng-deep .p-panel-content {
+  background-color: #f8f9fa;
+}
+
+:host ::ng-deep .p-dropdown {
+  border: 0 none;
+}
+:host ::ng-deep .p-inputtext {
+  border: 0 none;
+ 
+}
+:host ::ng-deep .searchtext {
+  background-color: #ebedf3;
+  height: 7vh;
+
+}
+
+.zones{
+  width: 570px;
+  min-height: 50px;
+  height: auto;
+  background-color: #f5f6f9;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  & .allbtn{
+   display: inline;
+   & .zonetext{
+    font-family: "Lucida Sans",  sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-left: 30px;
+   }
+   & .zoneimg{
+    margin:15px 0 0 20px;
+    transform: scale(1.6);
+
+   }
+   & .click{
+    transform: scale(1.6);
+    display: flex;
+    justify-content:space-around;
+    margin: -30px 0 0 450px;
+    
+   }
+   & .click:hover{
+    cursor: pointer;
+   }
+  }
+ 
+}

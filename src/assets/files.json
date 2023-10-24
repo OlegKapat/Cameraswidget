@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "label": "Zone 1",
+      "data": "Documents Folder",
+      "expandedIcon": "ads_click",
+      "collapsedIcon": "ads_click",
+      "children": [
+        {
+          "label": "Sensor 1",
+          "data": "Camera 1",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        },
+        {
+          "label": "Sensor 2",
+          "data": "Camera 2",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        }
+      ]
+    },
+    {
+      "label": "Zone 1",
+      "data": "Pictures Folder",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "label": "Sensor 1",
+          "data": "Work Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        },
+        {
+          "label": "Sensor 2",
+          "data": "Home Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        }
+      ]
+    },
+    {
+      "label": "Zone 1",
+      "data": "Movies Folder",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "label": "Sensor 1",
+          "data": "Work Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        },
+        {
+          "label": "Sensor 2",
+          "data": "Home Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        }
+      ]
+    },
+    {
+      "label": "Zone 2",
+      "data": "Movies Folder",
+      "expandedIcon": "pi pi-folder-open",
+      "collapsedIcon": "pi pi-folder",
+      "children": [
+        {
+          "label": "Sensor 1",
+          "data": "Work Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        },
+        {
+          "label": "Sensor 2",
+          "data": "Home Folder",
+          "expandedIcon": "pi pi-folder-open",
+          "collapsedIcon": "pi pi-folder"
+        }
+      ]
+    }
+  ]
+}
