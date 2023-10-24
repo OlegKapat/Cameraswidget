@@ -1,5 +1,6 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
-import { IZone } from 'src/app/models/Izoneinterface';
+import { Cams, IZone } from 'src/app/models/Izoneinterface';
 
 
 @Component({
@@ -23,5 +24,12 @@ constructor(private changes:ChangeDetectorRef) {}
 }
 public openCams(){
   this.expandcams = !this.expandcams
+}
+drop(event: CdkDragDrop<Cams[]>): void {
+  moveItemInArray(
+    event.container.data,
+    event.previousIndex,
+    event.currentIndex
+  );
 }
 }
