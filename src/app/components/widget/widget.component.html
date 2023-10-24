@@ -1,4 +1,4 @@
-<div class="flex align-items-center justify-content-center" style="margin-left: -30%;" cdkDrag>
+<div class="flex align-items-center justify-content-center" style="margin-left: -30%;">
   <div class="min-w-min md:min-w-max">
     <p-panel class="header" header="Search Geo Objects" [toggleable]="true" resize>
       <ng-template pTemplate="icons">
@@ -35,7 +35,7 @@
                 </span>
               </div>
             </div>
-            <div class="zones">
+            <div class="zones" [ngClass]="expanded ? 'checkedzone' : 'nocheckedzone' ">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">activity_zone</span>
                 <sup class="zonetext">Zones</sup>

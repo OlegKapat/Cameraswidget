@@ -53,12 +53,17 @@
   background-color: #ebedf3;
   height: 7vh;
 }
+:host ::ng-deep .checkedzone{
+  background-color: #5fa1d8;
+}
+:host ::ng-deep .nocheckedzone{
+  background-color: #f5f6f9;
+}
 
 .zones {
   width: 570px;
   min-height: 50px;
   height: auto;
-  background-color: #f5f6f9;
   border-radius: 10px;
   margin: auto;
   overflow: hidden;
