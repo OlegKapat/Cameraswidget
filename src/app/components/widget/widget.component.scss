@@ -1,6 +1,7 @@
 @import 'primeicons/primeicons.css';
 .header {
   height: 30vh;
+  position: absolute;
   & .pinned {
     transform: scale(1.4) rotate(45deg);
   }

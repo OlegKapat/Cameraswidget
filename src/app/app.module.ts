@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { PrimengcomponentsModule } from './shared/primengcomponents/primengcomponents.module';
 import { WidgetComponent } from './components/widget/widget.component';
 import { DragAndDropManagerDirective } from './shared/directives/drag-and-drop-manager.directive';
-import { ZonesComponent } from './components/zones/zones.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { ResizableModule } from 'angular-resizable-element';
 import { ResizibleDirective } from './shared/directives/resizible.directive';
@@ -22,7 +22,6 @@ import { ZoneswithcamsComponent } from './components/zoneswithcams/zoneswithcams
     AppComponent,
     WidgetComponent,
     DragAndDropManagerDirective,
-    ZonesComponent,
     ResizibleDirective,
     MockdatatableComponent, 
     ZoneswithcamsComponent 
