@@ -1,30 +1,38 @@
-# Widget
+Спасибо за интересную задачу.
+ 1. Drag&Drop работает на выпадающем списку камер.
+ 2. Resize виджета работает частично с ним больше всего провозился. При реальной задаче доведу до конца. Две npm 
+     библиотеки не работали вообще никак даже когда затащил весь код в проект. Думаю что проблемы с их версионностью.
+     Не хотел тратить много времени и так задерживаю.
+ 3. Локализация проэкта работает настроена только на меню.
+ 4. Некоторые моменты по состоянию конекта камер так и не понял. Сделал из своего понимания стейта соединения. Была бы модель для этого.
+ 5. Типы выпадающих списков на сервере учел лежат в enum.
+ 6. Из раздела мапинга данных то все находится в таблице.
+ 7. Создал метод поиска в контроле но не тестил. Так как не понимаю по каким полям проводить поиск.
+ 8. Единсвенное что хотел бы сделать для примера так это отправка данных из какой то формы в json то тут не позволяет время (не сложно если будет нужно)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+ Ну и теперь самое важное:
+ PrimeNg не самая хорошая библиотека для больших проектов. Это строго типизированые контролы с органиченными возможностями к расширению другими полями.
+ Material намного лучше и бобольше функионала даже Drag&Drop можно нормально прикрутить к проекту. С учетом что в Фигме макет создан не по стилю 
+ контрола то тяжело поламать стили в этой библиотеке. Обычно макет делается с привязкой к проектируемой библиотеке. Много уходит на это времени.
+ Для виджета в этой библиотке есть хороший елемент TreeSelect но он плохо расширяем под требования проекта. Только базовые поля и внутрь его уже ничего не
+ впихнешь. Поэтому создал свой кастомный.Также мало css класов в отличие от Bootstap где уже есть предисталтрованные классы и не нужно тратить время на 
+ создание css свойств. Сетка этой библиотеки совсем плохая.
 
-## Development server
+ Возможно что то упустил в спешке.
+ Можно еще доделать открывание зон от кликания на выбранное (в моделе это учтено).
+ В гитигноре нету позиции env поэтому все должно стянуться с ключами. Но на всякий случай.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ export const environment = {
+  production: false,
+  locales: ['en', 'ru'],
+  defaultLocale: 'en',
+};
 
-## Code scaffolding
+Рекомендации:
+Поскольку проект больше носит секюрный характер то есть лучше строить API на GRPC.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Если есть вопросы то готов ответить или лучше встретится онлайн. 
+Спасибо.
 
 // i18n
 ngx-translate-extract --input ./src --output ./src/assets/i18n/{en,ru}.json --clean --sort --format namespaced-json

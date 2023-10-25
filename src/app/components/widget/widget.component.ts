@@ -8,6 +8,7 @@ import { ZonesService } from 'src/app/shared/services/zones.service';
 import { places } from 'src/app/mockdata/placemarks';
 import { IPlacemarks } from 'src/app/models/Iplacemarks';
 import { Cams, IZone } from 'src/app/models/Izoneinterface';
+import { TypeSites } from 'src/app/shared/enums/typesite';
 
 
 @Component({
@@ -25,9 +26,9 @@ export class WidgetComponent implements OnInit, AfterViewInit {
   public zonedata!: IZone[];
   public zoneCams!: Cams[];
   private destroyRef = inject(DestroyRef);
-  public expandedzone:boolean = false;
-  public expandedsite:boolean = false;
-  public expandedlayer:boolean = false;
+  public expandedzone: boolean = false;
+  public expandedsite: boolean = false;
+  public expandedlayer: boolean = false;
   public expandedplacemarker: boolean = false
 
 
@@ -47,21 +48,21 @@ export class WidgetComponent implements OnInit, AfterViewInit {
       this.searchedValue = val;
     })
   }
-  getZones() {
+  public getZones() {
     try {
-      this.zoneservice.getZones<IZone>().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((x) => {
-        if (x.length) {
-          this.zonedata = x
-          this.zoneCams = x.map((cam, i) => cam.cams[i])
-        }
+      this.zoneservice.getZones<IZone>().pipe(map(data => data.filter(data => data.indificatortype == TypeSites.Zone)))
+        .pipe(takeUntilDestroyed(this.destroyRef)).subscribe((x) => {
+          if (x.length) {
+            this.zonedata = x
+            this.zoneCams = x.map((cam, i) => cam.cams[i])
+          }
 
-      });
+        });
     }
     catch (e) {
       console.log(e);
 
     }
-
     this.expandedzone = !this.expandedzone;
   }
 
