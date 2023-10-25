@@ -14,15 +14,22 @@ export class MockdatatableComponent implements OnInit {
   constructor(private mockservice: GetdataService) { }
 
   ngOnInit(): void {
-    this.mockservice.getData().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((data: any) => {
-      this.dataTable = data.map((val: IMockTable) => {
-        return {
-          id: val.unitId,
-          name: val.entityName,
-          createdAt: val.createdDate,
-          sum: val.sum
-        }
+    try {
+      this.mockservice.getData().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((data: any) => {
+        this.dataTable = data.map((val: IMockTable) => {
+          return {
+            id: val.unitId,
+            name: val.entityName,
+            createdAt: val.createdDate,
+            sum: val.sum
+          }
+        })
       })
-    })
+    }
+    catch (e) {
+      console.error(e);
+
+    }
+
   }
 }

@@ -42,40 +42,40 @@
                 </span>
               </div>
             </div>
-            <div class="zones" [ngClass]="expanded ? 'checkedzone' : 'nocheckedzone'">
+            <div class="zones" [ngClass]="expandedzone ? 'checkedzone' : 'nocheckedzone'">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">activity_zone</span>
                 <sup class="zonetext">Zones</sup>
                 <span
                   class="material-symbols-outlined click"
-                  [ngClass]="expanded ? 'clickup' : 'click'"
+                  [ngClass]="expandedzone ? 'clickup' : 'click'"
                   (click)="getZones()"
-                  >{{ expanded ? 'expand_less' : 'expand_more' }}</span
+                  >{{ expandedzone ? 'expand_less' : 'expand_more' }}</span
                 >
               </div>
             </div>
             <div>
               <app-zoneswithcams
                 [zones]="zonedata"
-                [expanded]="expanded"
+                [expanded]="expandedzone"
                 [searchedValue]="searchedValue"
               ></app-zoneswithcams>
             </div>
-            <div class="zones" style="margin-top: 20px">
+            <div class="zones" style="margin-top: 20px" [ngClass]="expandedsite ? 'checkedzone' : 'nocheckedzone'">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">my_location</span>
                 <sup class="zonetext">Sites</sup>
                 <span class="material-symbols-outlined click">keyboard_arrow_down</span>
               </div>
             </div>
-            <div class="zones" style="margin-top: 20px">
+            <div class="zones" style="margin-top: 20px" [ngClass]="expandedplacemarker ? 'checkedzone' : 'nocheckedzone'">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">location_on</span>
                 <sup class="zonetext">Placemark</sup>
                 <span class="material-symbols-outlined click">keyboard_arrow_down</span>
               </div>
             </div>
-            <div class="zones" style="margin-top: 20px">
+            <div class="zones" style="margin-top: 20px" [ngClass]="expandedlayer ? 'checkedzone' : 'nocheckedzone'">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">layers</span>
                 <sup class="zonetext">Layers</sup>

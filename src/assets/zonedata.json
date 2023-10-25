@@ -3,6 +3,7 @@
     "zona": "zona 1",
     "checked": false,
     "numberzone":1,
+    "indificatortype":1,
     "cams": [
       { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": true, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
       { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
@@ -14,6 +15,7 @@
     "zona": "zona 1",
     "checked": false,
     "numberzone":2,
+    "indificatortype":1,
     "cams": [
       { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false,"icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
       { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
@@ -25,6 +27,7 @@
     "zona": "zona 1",
     "checked": false,
     "numberzone":4,
+    "indificatortype":1,
     "cams": [
       { "subzone": "Sensor 1", "checked": true, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
       { "subzone": "Sensor 2", "checked": false, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click"},
@@ -36,6 +39,7 @@
     "zona": "zona 2",
     "checked": false,
     "numberzone":4,
+    "indificatortype":1,
     "scams": [
       { "subzone": "Sensor 1", "checked": false, "camera": "Camera 1", "connection": false, "icon": "videocam","iconconn":"sync_alt","iconclick":"drag_click" },
       { "subzone": "Sensor 2", "checked": true, "camera": "Camera 1", "connection": false, "icon": "wifi_tethering_off","iconconn":"sync_alt","iconclick":"drag_click" },
