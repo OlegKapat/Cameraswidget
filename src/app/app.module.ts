@@ -6,10 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimengcomponentsModule } from './shared/primengcomponents/primengcomponents.module';
 import { WidgetComponent } from './components/widget/widget.component';
-//import { DragAndDropManagerDirective } from './shared/directives/drag-and-drop-manager.directive';
-
 import { HttpClientModule } from '@angular/common/http';
-import { ResizableModule } from 'angular-resizable-element';
 import { ResizibleDirective } from './shared/directives/resizible.directive';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MockdatatableComponent } from './components/mockdatatable/mockdatatable.component';
@@ -21,7 +18,6 @@ import { ZoneswithcamsComponent } from './components/zoneswithcams/zoneswithcams
   declarations: [
     AppComponent,
     WidgetComponent,
-    //DragAndDropManagerDirective,
     ResizibleDirective,
     MockdatatableComponent, 
     ZoneswithcamsComponent 
@@ -33,7 +29,7 @@ import { ZoneswithcamsComponent } from './components/zoneswithcams/zoneswithcams
     BrowserAnimationsModule,
     PrimengcomponentsModule,
     HttpClientModule,
-    ResizableModule,
+  
     ReactiveFormsModule
   ],
   providers: [],
