@@ -1,4 +1,4 @@
-<div class="flex align-items-center justify-content-center" style="margin-left: -30%;">
+<div class="flex align-items-center justify-content-center" style="margin-left: -30%">
   <div class="min-w-min md:min-w-max">
     <p-panel class="header" header="Search Geo Objects" [toggleable]="true" resize>
       <ng-template pTemplate="icons">
@@ -6,7 +6,7 @@
           <span class="material-symbols-outlined pinned"> push_pin </span>
         </button>
       </ng-template>
-      <div class="header__mainblock" >
+      <div class="header__mainblock">
         <div class="header__mainblock-panel flex flex-wrap align-items-center justify-content-center -m-2">
           <p-scrollPanel>
             <div class="grid h-auto">
@@ -30,12 +30,19 @@
               <div class="headerDivider"></div>
               <div class="col">
                 <span class="p-input-icon-right py-4">
-                  <input class="searchtext" type="text" pInputText [(ngModel)]="value" placeholder="Search" />
+                  <input
+                    class="searchtext"
+                    [formControl]="searchControl"
+                    type="text"
+                    pInputText
+                    [(ngModel)]="value"
+                    placeholder="Search"
+                  />
                   <i class="filter material-symbols-outlined"> search </i>
                 </span>
               </div>
             </div>
-            <div class="zones" [ngClass]="expanded ? 'checkedzone' : 'nocheckedzone' ">
+            <div class="zones" [ngClass]="expanded ? 'checkedzone' : 'nocheckedzone'">
               <div class="allbtn">
                 <span class="material-symbols-outlined zoneimg">activity_zone</span>
                 <sup class="zonetext">Zones</sup>
@@ -48,7 +55,11 @@
               </div>
             </div>
             <div>
-              <app-zoneswithcams [zones]="zonedata" [expanded]="expanded"></app-zoneswithcams>
+              <app-zoneswithcams
+                [zones]="zonedata"
+                [expanded]="expanded"
+                [searchedValue]="searchedValue"
+              ></app-zoneswithcams>
             </div>
             <div class="zones" style="margin-top: 20px">
               <div class="allbtn">
@@ -73,12 +84,6 @@
             </div>
           </p-scrollPanel>
         </div>
-        <!-- <app-zones
-          style="margin-top: 20px !important"
-          [nodes]="nodes"
-          [invert]="invert"
-          [onDragDrop]="onDragDrop$"
-        ></app-zones> -->
       </div>
     </p-panel>
   </div>

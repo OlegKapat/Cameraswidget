@@ -15,9 +15,9 @@
     </div>
     <ng-template [ngIf]="expandcams">
       <div cdkDropListGroup>
-        <div cdkDropList [cdkDropListData]="item.cams" (cdkDropListDropped)="drop($event)" >
+        <div cdkDropList [cdkDropListData]="item.cams" (cdkDropListDropped)="drop($event)">
           <div *ngFor="let cam of item.cams" cdkDrag>
-            <div id="wrapper" [ngClass]="cam.checked ? 'checkedcams': 'nocheckedcams'">
+            <div id="wrapper" [ngClass]="cam.checked ? 'checkedcams' : 'nocheckedcams'">
               <input type="checkbox" [checked]="cam.checked" />
               <div class="inside">
                 <span class="material-symbols-outlined videocam">{{ cam.icon }}</span>

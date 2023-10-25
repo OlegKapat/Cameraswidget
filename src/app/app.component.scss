@@ -1,26 +1,25 @@
-.navbar{
-    width: 100%;
-    height: 10vh;
-    background-color: aliceblue;
-    & .navbar-nav{
-        margin-left: 40%;
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: aliceblue;
+  & .navbar-nav {
+    margin-left: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-        & .nav-link{
-            color: rgb(3, 3, 3);
-            padding: 20px;
-           
-        }
+    & .nav-link {
+      color: rgb(3, 3, 3);
+      padding: 20px;
     }
+  }
 }
-:host ::ng-deep p-dropdown{
+:host ::ng-deep p-dropdown {
   margin-left: 10%;
 }
 @media screen and (max-width: 600px) {
-    .navbar-nav{
-        margin-left: 20px !important;
-    }
+  .navbar-nav {
+    margin-left: 20px !important;
   }
+}

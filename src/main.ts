@@ -6,5 +6,5 @@ import { installPatch } from './app/shared/patch/monkey-patch';
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
-installPatch();
+
 

@@ -2,18 +2,19 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active">{{'menu.Home' | translate}}</a>
-        <a class="nav-link" routerLink="widget" routerLinkActive="active">{{'menu.Widget' | translate}}</a>
-        <a class="nav-link" routerLink="mocktable" routerLinkActive="active">{{'menu.Mocktable' | translate}}</a>
+        <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active">{{
+          'menu.Home' | translate
+        }}</a>
+        <a class="nav-link" routerLink="widget" routerLinkActive="active">{{ 'menu.Widget' | translate }}</a>
+        <a class="nav-link" routerLink="mocktable" routerLinkActive="active">{{ 'menu.Mocktable' | translate }}</a>
         <form [formGroup]="langform">
           <p-dropdown formControlName="languages" [options]="language" optionLabel="name"></p-dropdown>
-      </form>
+        </form>
       </div>
     </div>
   </div>
 </nav>
-<h1 style="text-align: center;">ALL FOR TESTS</h1>
+<h1 style="text-align: center">ALL FOR TESTS</h1>
 <div class="container" style="margin-top: 100px">
   <router-outlet></router-outlet>
 </div>
-<!-- <app-zoneswithcams></app-zoneswithcams> -->

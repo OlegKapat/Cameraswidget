@@ -53,10 +53,10 @@
   background-color: #ebedf3;
   height: 7vh;
 }
-:host ::ng-deep .checkedzone{
+:host ::ng-deep .checkedzone {
   background-color: #5fa1d8;
 }
-:host ::ng-deep .nocheckedzone{
+:host ::ng-deep .nocheckedzone {
   background-color: #f5f6f9;
 }
 
@@ -65,6 +65,7 @@
   min-height: 50px;
   height: auto;
   border-radius: 10px;
+  background-color: #f5f6f9;
   margin: auto;
   overflow: hidden;
   & .allbtn {

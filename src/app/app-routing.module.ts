@@ -5,9 +5,9 @@ import { WidgetComponent } from './components/widget/widget.component';
 import { MockdatatableComponent } from './components/mockdatatable/mockdatatable.component';
 
 const routes: Routes = [
-  {path:"*",component:AppComponent},
-  {path:"widget",component:WidgetComponent},
-  {path:"mocktable",component:MockdatatableComponent}
+  { path: "*", component: AppComponent },
+  { path: "widget", component: WidgetComponent },
+  { path: "mocktable", component: MockdatatableComponent }
 ];
 
 @NgModule({
